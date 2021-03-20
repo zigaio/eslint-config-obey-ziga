@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-obey-ziga",
+  "version": "1.0.0",
+  "description": "Ziga's very opinionated JS ESLint base config.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diceler/eslint-config-obey-ziga.git"
+  },
+  "keywords": [
+    "eslint",
+    "es",
+    "es6",
+    "javascript",
+    "eslint-config",
+    "ziga",
+    "obey",
+    "obey-ziga",
+    "jslint"
+  ],
+  "author": "Daniel Ziga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diceler/eslint-config-obey-ziga/issues"
+  },
+  "homepage": "https://github.com/diceler/eslint-config-obey-ziga#readme"
+}
