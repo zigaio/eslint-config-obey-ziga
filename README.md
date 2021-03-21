@@ -20,7 +20,6 @@ Once the package is installed, add `obey-ziga` to your `extend` prop in either `
 ```js
 {
   "extends": [
-    "eslint:recommended", // or eslint:all
     "obey-ziga"
   ]
 }
