@@ -4,7 +4,6 @@ const {resolve} = require;
 
 module.exports = {
   extends: [
-    'eslint:all',
     './rules/errors',
     './rules/best-practices',
     './rules/strict',

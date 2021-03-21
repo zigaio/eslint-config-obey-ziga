@@ -12,14 +12,15 @@
   },
   "keywords": [
     "eslint",
+    "eslintconfig ",
+    "eslint-config",
+    "jslint",
     "es",
     "es6",
     "javascript",
-    "eslint-config",
     "ziga",
     "obey",
-    "obey-ziga",
-    "jslint"
+    "obey-ziga"
   ],
   "author": "Daniel Ziga",
   "license": "MIT",
@@ -27,6 +28,9 @@
     "url": "https://github.com/diceler/eslint-config-obey-ziga/issues"
   },
   "homepage": "https://github.com/diceler/eslint-config-obey-ziga#readme",
+  "peerDependencies": {
+    "eslint": ">= 5"
+  },
   "devDependencies": {
     "eslint": "^7.22.0"
   }

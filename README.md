@@ -8,18 +8,19 @@ This package provides heavily **opinionated** rules, in a shared config.
 ## Installation
 
 ```
-$ npm i -D eslint eslint-config-obey-ziga
+$ npm i -D eslint-config-obey-ziga
 ```
-
-`obey-ziga` turns on `eslint:all`. Rules I hold no opinion about are deactivated.
 
 ## Usage
 
 Once the package is installed, add `obey-ziga` to your `extend` prop in either `package.json` or `.eslintrc`.
 
+This package relies on `eslint:all` to be on. `obey-ziga` will deactivate and change rules based on the opinionated config.
+
 ```js
 {
   "extends": [
+    "eslint:all",
     "obey-ziga"
   ]
 }
@@ -29,7 +30,8 @@ Once the package is installed, add `obey-ziga` to your `extend` prop in either `
 
 It is a hot topic in the dev world whether to treat warnings as errors or just something that can be safely ignored.
 
-I am on the side of "treat warnings as errors". That is a personal preference. I want a clean output console when I run my linter.
+This package on the side of "treat warnings as errors". Only `warning-comments` (e.g. `// TODO`, `// FIX`) will yield warnings.
+Everything else will yield errors.
 
 ## Roadmap
 
