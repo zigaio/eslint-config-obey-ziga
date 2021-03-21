@@ -1,11 +1,17 @@
 module.exports = {
   rules: {
     'array-bracket-newline': [2, {
-      minItems: 4,
+      minItems: 2,
     }],
     'array-element-newline': [2, {
-      multiline: true,
-      minItems: 4,
+      ArrayExpression: {
+        multiline: true,
+        minItems: 1,
+      },
+      ArrayPattern: {
+        multiline: true,
+        minItems: 4,
+      },
     }],
     'capitalized-comments': [2, 'always', {
       ignoreInlineComments: true,
