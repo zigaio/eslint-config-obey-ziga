@@ -109,14 +109,11 @@ module.exports = {
   }],
   'padding-line-between-statements': [
     2,
-    // return statements.
     {
       blankLine: 'always',
       prev: '*',
       next: 'return',
     },
-
-    // directives.
     {
       blankLine: 'always',
       prev: 'directive',
@@ -127,8 +124,6 @@ module.exports = {
       prev: 'directive',
       next: 'directive',
     },
-
-    // const, let, var.
     {
       blankLine: 'always',
       prev: ['const', 'let', 'var'],
@@ -139,22 +134,16 @@ module.exports = {
       prev: ['const', 'let', 'var'],
       next: ['const', 'let', 'var'],
     },
-
-    // case clauses in switch statements.
     {
       blankLine: 'always',
       prev: ['case', 'default'],
       next: '*',
     },
-
-    // export declarations.
     {
       blankLine: 'always',
       prev: 'export',
       next: '*',
     },
-
-    // import declarations.
     {
       blankLine: 'always',
       prev: 'import',
@@ -165,8 +154,6 @@ module.exports = {
       prev: 'import',
       next: 'import',
     },
-
-    // function declarations, for loop families, immediately invoked function expression statements.
     {
       blankLine: 'always',
       prev: ['function', 'iife', 'for'],

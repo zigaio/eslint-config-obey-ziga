@@ -1,6 +1,6 @@
 # _Obey Ziga_
 
-This package provides my personal convictions for how to write proper JavaScript, in a shared config.
+This package provides heavily **opinionated** rules, in a shared config.
 
 > The idea for the package name branched out from an internal joke at my office. I hold strong opinions about writing code and my teammates were indifferent.
 > So it became a running joke to just "obey what Ziga says."
@@ -11,7 +11,7 @@ This package provides my personal convictions for how to write proper JavaScript
 $ npm i -D eslint eslint-config-obey-ziga
 ```
 
-`obey-ziga` contains all ESLint rules not covered by `eslint:recommended`, including ES6.
+`obey-ziga` turns on `eslint:all`. Rules I hold no opinion about are deactivated.
 
 ## Usage
 
