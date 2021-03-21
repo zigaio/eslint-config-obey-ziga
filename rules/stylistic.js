@@ -7,7 +7,7 @@ module.exports = {
       multiline: true,
       minItems: 4,
     }],
-    'capitalized-comments': [2, {
+    'capitalized-comments': [2, 'always', {
       ignoreInlineComments: true,
       ignoreConsecutiveComments: true,
     }],
@@ -57,10 +57,10 @@ module.exports = {
       ignoreTemplateLiterals: false,
       ignoreRegExpLiterals: true,
     }],
-    'max-lines-per-function': {
+    'max-lines-per-function': [2, {
       skipBlankLines: true,
       skipComments: true,
-    },
+    }],
     'max-nested-callbacks': [2, 4],
     'max-params': [2, 5],
     'max-statements': 0,
@@ -85,7 +85,7 @@ module.exports = {
     'object-curly-newline': [2, {
       ObjectExpression: {
         multiline: true,
-        minProperties: 2
+        minProperties: 1,
       },
       ObjectPattern: {
         multiline: true,
@@ -177,5 +177,5 @@ module.exports = {
     'space-before-function-paren': [2, 'never'],
     'template-tag-spacing': [2, 'always'],
     'wrap-regex': 0,
-  }
+  },
 };
