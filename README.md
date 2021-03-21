@@ -37,9 +37,9 @@ Everything else will yield errors.
 
 Upcoming versions:
 
-- `1.1.X`
+- `2.x`
     - Rules for React (`eslint-plugin-react`).
     - Rules for A11Y JSX (`eslint-plugin-jsx-a11y`).
-- `1.2.X`
+- `3.x`
     - Rules for TypeScript (`@typescript-eslint/eslint-plugin`).
     - Disabling of ESLint rules hijacked for TypeScript compatibility.
