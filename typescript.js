@@ -7,5 +7,8 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: ['./rules/typescript'].map(resolve),
+  extends: [
+    './rules/typescript',
+    './rules/ts-eslint',
+  ].map(resolve),
 };
