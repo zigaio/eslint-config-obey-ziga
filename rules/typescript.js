@@ -35,15 +35,15 @@ module.exports = {
         prefix: ['T']
       },
       {
-        selector: ['class', 'function'],
-        format: ['StrictPascalCase', 'UPPER_CASE']
+        selector: ['function'],
+        format: ['strictCamelCase', 'StrictPascalCase', 'UPPER_CASE'],
       },
       {
-        selector: ['enum', 'enumMember'],
-        format: ['StrictPascalCase', 'UPPER_CASE']
+        selector: ['enum', 'enumMember', 'class'],
+        format: ['StrictPascalCase', 'UPPER_CASE'],
       },
       {
-        selector: ['variable', 'memberLike'],
+        selector: ['variable', 'memberLike', 'variableLike'],
         types: ['boolean'],
         format: ['PascalCase'],
         prefix: [
@@ -53,7 +53,7 @@ module.exports = {
           'can',
           'did',
           'will'
-        ]
+        ],
       },
       {
         "selector": "variable",
