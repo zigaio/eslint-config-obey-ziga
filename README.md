@@ -2,7 +2,7 @@
 
 This package provides heavily **opinionated** rules, in a shared config.
 
-> The idea for the package name branched out from an internal joke at my office. I hold strong opinions about writing code and my teammates were indifferent.
+> The idea for the package name branched out from an internal joke at my office. I hold strong opinions about writing code, and my teammates were indifferent.
 > So it became a running joke to just "obey what Ziga says."
 
 It is expected, when using this library to extend your ESLint, you turn on all rules by default (`eslint:all`).
@@ -21,7 +21,7 @@ $ npm i -D eslint-config-obey-ziga
 
 Once the package is installed, add `obey-ziga` to your `extends` prop in either `package.json` or `.eslintrc`.
 
-```js
+```json
 {
   "extends": [
     "eslint:all",
@@ -36,18 +36,32 @@ Once the package is installed, add `obey-ziga` to your `extends` prop in either 
 
 For opinionated React rules:
 
-```js
+```json
 {
   "extends": [
-    // ...
     "plugin:react/all",
     "plugin:jsx-a11y/recommended",
-    "obey-ziga/react",
+    "obey-ziga/react"
   ]
 }
 ```
 
 > This package expects `plugin:react/all` and `plugin:jsx-a11y/recommended` to be on.
+
+### With TypeScript
+
+For opinionated TypeScript rules:
+
+```json
+{
+  "extends": [
+    "plugin:@typescript-eslint/all",
+    "obey-ziga/typescript"
+  ]
+}
+```
+
+> This package expects `plugin:@typescript-eslint/all` to be on. 
 
 ## Warning equals error
 
@@ -60,13 +74,9 @@ Everything else will yield errors.
 
 Upcoming versions:
 
-- `2.x`
-    - Rules for React (`eslint-plugin-react`).
-    - Rules for React Hooks (`eslint-plugin-react-hooks`).
-    - Rules for JSX, including A11Y (`eslint-plugin-jsx-a11y`).
-- `3.x`
-    - Rules for TypeScript (`@typescript-eslint/eslint-plugin`).
-    - Disabling of ESLint rules hijacked for TypeScript compatibility.
+- `3.x.x`
+  - Docs for disabled rules.
+  - Docs modified rules
 
 ### Checklist
 
@@ -76,4 +86,7 @@ Upcoming versions:
   - [x] Hooks
   - [x] JSX
   - [x] JSX-A11Y
-- [ ] TypeScript (v3.X)
+- [x] TypeScript (v3.X)
+- [ ] Docs
+  - [ ] Doc disabled rules
+  - [ ] Doc modified rules
