@@ -9,4 +9,7 @@ module.exports = {
   },
   extends: ['./rules/typescript'].map(resolve),
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json',
+  },
 };
