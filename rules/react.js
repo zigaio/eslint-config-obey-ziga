@@ -35,10 +35,12 @@ module.exports = {
         'everything-else',
         'render',
       ],
-      groups: [
-        '/^render.+$/',
-        'render',
-      ],
+      groups: {
+        rendering: [
+          '/^render.+$/',
+          'render',
+        ]
+      },
     }],
     'react/sort-prop-types': [2, {
       callbacksLast: true,
