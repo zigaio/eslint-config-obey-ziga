@@ -73,6 +73,6 @@ Upcoming versions:
 - [ ] React (v2.x)
   - [x] Base
   - [x] Hooks
-  - [ ] JSX
+  - [x] JSX
   - [ ] JSX-A11Y
 - [ ] TypeScript (v3.X)

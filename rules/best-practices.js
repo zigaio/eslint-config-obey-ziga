@@ -10,8 +10,9 @@ module.exports = {
     }],
     'no-floating-decimal': 0,
     'no-magic-numbers': [2, {
-      ignoreDefaultValues: true,
+      ignoreArrayIndexes: true,
       detectObjects: true,
+      enforceConst: true,
     }],
     'no-param-reassign': [2, {
       props: true,
