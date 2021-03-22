@@ -3,7 +3,6 @@ module.exports = {
     'consistent-return': [2, {
       treatUndefinedAsUnspecified: true,
     }],
-    'curly': [2, 'all'],
     'dot-location': [2, 'property'],
     'grouped-accessor-pairs': [2, 'getBeforeSet'],
     'no-else-return': [2, {
@@ -23,8 +22,5 @@ module.exports = {
     'prefer-named-capture-group': 0,
     'require-unicode-regexp': 0,
     'wrap-iife': [2, 'inside'],
-    'yoda': [2, 'never', {
-      exceptRange: true,
-    }],
   }
 };
