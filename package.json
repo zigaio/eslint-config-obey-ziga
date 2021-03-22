@@ -29,7 +29,9 @@
   },
   "homepage": "https://github.com/diceler/eslint-config-obey-ziga#readme",
   "peerDependencies": {
-    "eslint": ">= 5"
+    "eslint": ">= ^7.22.0",
+    "eslint-plugin-react": ">= ^7.22.0",
+    "eslint-plugin-react-hooks": ">= ^4.2.0"
   },
   "devDependencies": {
     "eslint": "^7.22.0",

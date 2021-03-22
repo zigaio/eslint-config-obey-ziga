@@ -8,6 +8,7 @@ module.exports = {
     jest: true,
   },
   extends: [
+    './rules/jsx',
     './rules/jsx-a11y',
     './rules/react',
     './rules/hooks',
@@ -17,5 +18,10 @@ module.exports = {
       jsx: true,
     },
     sourceType: 'module',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };

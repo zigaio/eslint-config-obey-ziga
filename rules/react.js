@@ -9,8 +9,43 @@ module.exports = {
     'react/forbid-component-props': 0,
     'react/forbid-dom-props': 0,
     'react/forbid-elements': 0,
-    'react/forbid-foreign-prop-types': 2,
-    'react/forbid-prop-types': 2,
-    'react/function-component-definition': 2,
+    'react/no-children-prop': 0,
+    'react/no-did-mount-set-state': [2, 'disallow-in-func'],
+    'react/no-did-update-set-state': [2, 'disallow-in-func'],
+    'react/no-set-state': 0,
+    'react/no-string-refs': [2, {
+      noTemplateLiterals: true,
+    }],
+    'react/no-unescaped-entities': 0,
+    'react/no-will-update-set-state': [2, 'disallow-in-func'],
+    'react/require-default-props': [2, {
+      forbidDefaultForRequired: true,
+    }],
+    'react/require-optimization': 0,
+    'react/self-closing-comp': [2, {
+      html: false,
+    }],
+    'react/sort-comp': [2, {
+      order: [
+        'static-variables',
+        'static-methods',
+        'lifecycle',
+        '/^handle.+$/',
+        '/^on.+$/',
+        'everything-else',
+        'render',
+      ],
+      groups: [
+        '/^render.+$/',
+        'render',
+      ],
+    }],
+    'react/sort-prop-types': [2, {
+      callbacksLast: true,
+      noSortAlphabetically: true,
+      requiredFirst: true,
+      sortShapeProp: true,
+    }],
+    'react/state-in-constructor': [2, 'never'],
   },
 };
