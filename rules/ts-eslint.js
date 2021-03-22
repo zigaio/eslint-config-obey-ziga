@@ -1,6 +1,6 @@
 module.exports = {
   plugins: ['@typescript-eslint'],
-  extends: {
+  rules: {
     '@typescript-eslint/comma-dangle': [2, {
       arrays: 'always-multiline',
       objects: 'always-multiline',
