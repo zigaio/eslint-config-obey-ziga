@@ -18,7 +18,48 @@ module.exports = {
     }],
     '@typescript-eslint/naming-convention': [
       2,
-      {},
+      {
+        selector: 'default',
+        format: ['strictCamelCase'],
+        leadingUnderscore: 'forbid',
+        trailingUnderscore: 'forbid',
+      },
+      {
+        selector: 'interface',
+        format: ['StrictPascalCase'],
+        prefix: ['I']
+      },
+      {
+        selector: ['typeAlias', 'typeParameter'],
+        format: ['StrictPascalCase'],
+        prefix: ['T']
+      },
+      {
+        selector: ['class', 'function'],
+        format: ['StrictPascalCase', 'UPPER_CASE']
+      },
+      {
+        selector: ['enum', 'enumMember'],
+        format: ['StrictPascalCase', 'UPPER_CASE']
+      },
+      {
+        selector: ['variable', 'memberLike'],
+        types: ['boolean'],
+        format: ['PascalCase'],
+        prefix: [
+          'is',
+          'should',
+          'has',
+          'can',
+          'did',
+          'will'
+        ]
+      },
+      {
+        "selector": "variable",
+        "modifiers": ["destructured"],
+        "format": null
+      }
     ],
     '@typescript-eslint/no-non-null-asserted-optional-chain': 0,
     '@typescript-eslint/no-type-alias': 0,
