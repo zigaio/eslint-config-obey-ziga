@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-obey-ziga",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Ziga's very opinionated JS ESLint base config.",
   "main": "index.js",
   "scripts": {
