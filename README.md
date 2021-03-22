@@ -32,7 +32,7 @@ Once the package is installed, add `obey-ziga` to your `extends` prop in either 
 
 > This package expects `eslint:all` to be on.
 
-### With React (JSX)
+### With React (JSX & JSX-A11Y)
 
 For opinionated React rules:
 
@@ -41,12 +41,13 @@ For opinionated React rules:
   "extends": [
     // ...
     "plugin:react/all",
+    "plugin:jsx-a11y/recommended",
     "obey-ziga/react",
   ]
 }
 ```
 
-> This package expects `plugin:react/all` to be on.
+> This package expects `plugin:react/all` and `plugin:jsx-a11y/recommended` to be on.
 
 ## Warning equals error
 
@@ -70,9 +71,9 @@ Upcoming versions:
 ### Checklist
 
 - [x] ESLint base (v1.x)
-- [ ] React (v2.x)
+- [x] React (v2.x)
   - [x] Base
   - [x] Hooks
   - [x] JSX
-  - [ ] JSX-A11Y
+  - [x] JSX-A11Y
 - [ ] TypeScript (v3.X)
