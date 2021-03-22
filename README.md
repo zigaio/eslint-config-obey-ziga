@@ -43,3 +43,12 @@ Upcoming versions:
 - `3.x`
     - Rules for TypeScript (`@typescript-eslint/eslint-plugin`).
     - Disabling of ESLint rules hijacked for TypeScript compatibility.
+
+### Checklist
+
+- [x] ESLint base rules. (v1.x)
+- [ ] React (v2.x)
+  - [ ] Base
+  - [x] Hooks
+  - [ ] JSX
+- [ ] TypeScript (v3.X)
