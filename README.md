@@ -54,9 +54,20 @@ For opinionated TypeScript rules:
 
 ```json
 {
-  "extends": [
-    "plugin:@typescript-eslint/all",
-    "obey-ziga/typescript"
+  "parser": "@typescript-eslint/parser",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:@typescript-eslint/all",
+        "obey-ziga/typescript"
+      ],
+      "parserOptions": {
+        "project": [
+          "./tsconfig.json"
+        ]
+      }
+    }
   ]
 }
 ```
