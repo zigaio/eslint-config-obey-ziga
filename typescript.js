@@ -8,8 +8,4 @@ module.exports = {
     jest: true,
   },
   extends: ['./rules/typescript'].map(resolve),
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: './tsconfig.json',
-  },
 };
