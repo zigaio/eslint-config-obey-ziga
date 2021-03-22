@@ -1,7 +1,7 @@
 module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
-    '@typescript-eslint/array-type.': [2, {
+    '@typescript-eslint/array-type': [2, {
       default: 'array-simple'
     }],
     '@typescript-eslint/consistent-type-assertions': [2, {
