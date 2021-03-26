@@ -8,7 +8,7 @@ This package provides heavily **opinionated** rules, in a shared config.
 ## Installation
 
 ```
-$ npm i -D eslint-config-obey-ziga
+$ npm i -D eslint eslint-config-obey-ziga
 ```
 
 ### With React
