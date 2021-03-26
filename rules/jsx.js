@@ -2,8 +2,12 @@ module.exports = {
   plugins: ['react'],
   rules: {
     'react/jsx-child-element-spacing': 0,
+    'react/jsx-curly-brace-presence': [2, 'never'],
     'react/jsx-curly-newline': [2, {
       singleline: 'forbid',
+    }],
+    'react/jsx-filename-extension': [2, {
+      extensions: ['.jsx', '.tsx']
     }],
     'react/jsx-handler-names': [2, {
       checkLocalVariables: true,
@@ -29,6 +33,7 @@ module.exports = {
       allow: 'literal',
     }],
     'react/jsx-props-no-multi-spaces': 0,
+    'react/jsx-props-no-spreading': 2,
     'react/jsx-sort-default-props': 0,
     'react/jsx-sort-props': [2, {
       shorthandLast: true,

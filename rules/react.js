@@ -2,8 +2,8 @@ module.exports = {
   plugins: ['react'],
   rules: {
     'react/boolean-prop-naming': [2, {
-      rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+(ed)$',
-      message: 'Boolean props must be prefixed with "is" or "has"',
+      rule: '^(is|has|should|can|did|will)[A-Z]([A-Za-z0-9]?)+(ed)?$',
+      message: 'Boolean props must be prefixed with "is", "has", "should", "can", "did", or "will".',
     }],
     'react/destructuring-assignment': [2, 'always'],
     'react/forbid-component-props': 0,

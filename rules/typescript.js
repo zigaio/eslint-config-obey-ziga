@@ -36,14 +36,18 @@ module.exports = {
       },
       {
         selector: ['function'],
-        format: ['strictCamelCase', 'StrictPascalCase', 'UPPER_CASE'],
+        format: ['strictCamelCase', 'StrictPascalCase'],
       },
       {
-        selector: ['enum', 'enumMember', 'class'],
+        selector: ['enum', 'class'],
+        format: ['StrictPascalCase'],
+      },
+      {
+        selector: 'enumMember',
         format: ['StrictPascalCase', 'UPPER_CASE'],
       },
       {
-        selector: ['variable', 'memberLike', 'variableLike'],
+        selector: ['variable', 'parameter', 'property'],
         types: ['boolean'],
         format: ['PascalCase'],
         prefix: [

@@ -13,8 +13,7 @@ module.exports = {
     }],
     '@typescript-eslint/indent': [2, 2, {
       VariableDeclarator: 'first',
-      flatTernaryExpressions: true,
-      offsetTernaryExpressions: true,
+      SwitchCase: 1,
     }],
     '@typescript-eslint/no-duplicate-imports': [2, {
       includeExports: true,
