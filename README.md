@@ -5,6 +5,8 @@ This package provides heavily **opinionated** rules, in a shared config.
 > The idea for the package name branched out from an internal joke at my office. I hold strong opinions about writing code, and my teammates were indifferent.
 > So it became a running joke to just "obey what Ziga says."
 
+`obey-ziga` aims to make your code make more sense to your future self and its future readers.
+
 ## Installation
 
 ```
@@ -96,25 +98,4 @@ Rather explicitly disable rules case-by-case than be just warned and have an opt
 
 `obey-ziga` warns about these rather than yield errors because I recognize that development is a complex thing, and some logic requirements can be extensive, so you implement them in stages.
 
-`obey-ziga` warns rather than leave this rule off to make sure this type of comment are not forgotten as is usually the case.
-
-## Roadmap
-
-Upcoming versions:
-
-- `3.x.x`
-  - Docs for disabled rules.
-  - Docs modified rules
-
-### Checklist
-
-- [x] ESLint base (v1.x)
-- [x] React (v2.x)
-  - [x] Base
-  - [x] Hooks
-  - [x] JSX
-  - [x] JSX-A11Y
-- [x] TypeScript (v3.X)
-- [ ] Docs
-  - [ ] Doc disabled rules
-  - [ ] Doc modified rules
+`obey-ziga` warns rather than leave this rule off to make sure these type of comments are not forgotten as is usually the case.

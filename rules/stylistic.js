@@ -22,34 +22,29 @@ module.exports = {
     }],
     'function-call-argument-newline': [2, 'consistent'],
     'function-paren-newline': [2, 'multiline-arguments'],
-    'id-denylist': 0,
+    'id-denylist': [2, 'cb', 'callback', 'data', 'err', 'error'],
     'id-length': [2, {
       min: 3,
       exceptions: [
         'id',
         'ex',
-        'i',
       ],
       exceptionPatterns: [
-        '([a-c]|[x-z]|[1-3])',
+        '[ijktTx-z]',
       ],
     }],
     'id-match': 0,
     'indent': [2, 2, {
       VariableDeclarator: 'first',
-      flatTernaryExpressions: true,
-      offsetTernaryExpressions: true,
+      SwitchCase: 1,
     }],
-    'linebreak-style': [2, 'windows'],
+    'linebreak-style': 0,
     'max-len': [2, {
       code: 100,
       tabWidth: 2,
       comments: 80,
       ignoreTrailingComments: true,
       ignoreUrls: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: false,
-      ignoreRegExpLiterals: true,
     }],
     'max-lines-per-function': [2, {
       skipBlankLines: true,
@@ -99,19 +94,12 @@ module.exports = {
         '||': 'before',
       }
     }],
-    'padded-blocks': [2, 'never', {
-      allowSingleLineBlocks: false,
-    }],
+    'padded-blocks': [2, 'never'],
     'padding-line-between-statements': [
       2,
       {
         blankLine: 'always',
         prev: '*',
-        next: 'return',
-      },
-      {
-        blankLine: 'always',
-        prev: 'directive',
         next: '*',
       },
       {
@@ -120,40 +108,20 @@ module.exports = {
         next: 'directive',
       },
       {
-        blankLine: 'always',
-        prev: ['const', 'let', 'var'],
-        next: '*',
-      },
-      {
-        blankLine: 'never',
-        prev: ['const', 'let', 'var'],
-        next: ['const', 'let', 'var'],
-      },
-      {
-        blankLine: 'always',
-        prev: ['case', 'default'],
-        next: '*',
-      },
-      {
-        blankLine: 'always',
-        prev: 'export',
-        next: '*',
-      },
-      {
-        blankLine: 'always',
-        prev: 'import',
-        next: '*',
-      },
-      {
         blankLine: 'never',
         prev: 'import',
         next: 'import',
       },
       {
+        blankLine: 'never',
+        prev: ['singleline-const', 'singleline-let', 'singleline-var'],
+        next: ['singleline-const', 'singleline-let', 'singleline-var'],
+      },
+      {
         blankLine: 'always',
-        prev: ['function', 'iife', 'for'],
-        next: '*',
-      }
+        prev: ['const', 'let', 'var'],
+        next: ['multiline-const', 'multiline-expression', 'multiline-let', 'multiline-var'],
+      },
     ],
     'prefer-exponentiation-operator': 0,
     'quote-props': [2, 'as-needed'],
@@ -161,15 +129,12 @@ module.exports = {
       avoidEscape: true,
       allowTemplateLiterals: true
     }],
-    'semi': [2, 'always', {
-      omitLastInOneLineBlock: false,
-    }],
+    'semi': [2, 'always'],
     'sort-keys': [2, 'asc', {
       natural: true,
     }],
     'sort-vars': 0,
     'space-before-function-paren': [2, 'never'],
-    'template-tag-spacing': [2, 'always'],
     'wrap-regex': 0,
   },
 };
