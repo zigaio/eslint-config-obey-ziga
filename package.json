@@ -22,7 +22,7 @@
     "obey",
     "obey-ziga"
   ],
-  "author": "Daniel Ziga",
+  "author": "Daniel Ziga <daniel@ziga.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/diceler/eslint-config-obey-ziga/issues"
