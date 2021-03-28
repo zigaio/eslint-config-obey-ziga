@@ -1,13 +1,7 @@
 module.exports = {
   rules: {
-    'array-bracket-newline': [2, {
-      minItems: 2,
-    }],
     'array-element-newline': [2, {
-      ArrayExpression: {
-        multiline: true,
-        minItems: 1,
-      },
+      ArrayExpression: 'always',
       ArrayPattern: {
         multiline: true,
         minItems: 4,
