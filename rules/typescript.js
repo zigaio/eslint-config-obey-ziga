@@ -61,6 +61,7 @@ module.exports = {
         "format": null
       }
     ],
+    '@typescript-eslint/no-floating-promises': 0,
     '@typescript-eslint/no-non-null-asserted-optional-chain': 0,
     '@typescript-eslint/no-type-alias': 0,
     '@typescript-eslint/non-nullable-type-assertion-style': 0,
