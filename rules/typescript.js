@@ -67,6 +67,7 @@ module.exports = {
     '@typescript-eslint/prefer-enum-initializers': 0,
     '@typescript-eslint/prefer-function-type': 0,
     '@typescript-eslint/require-array-sort-compare': 0,
+    '@typescript-eslint/restrict-template-expressions': 0,
     '@typescript-eslint/sort-type-union-intersection-members': 0,
     '@typescript-eslint/strict-boolean-expressions': 0,
     '@typescript-eslint/typedef': 0,
