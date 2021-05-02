@@ -46,6 +46,10 @@ module.exports = {
       ignoreTrailingComments: true,
       ignoreUrls: true,
     }],
+    'max-lines': [2, {
+      skipBlankLines: true,
+      skipComments: true,
+    }],
     'max-lines-per-function': [2, {
       skipBlankLines: true,
       skipComments: true,
@@ -88,12 +92,7 @@ module.exports = {
     }],
     'one-var': [2, 'never'],
     'one-var-declaration-per-line': [2, 'always'],
-    'operator-linebreak': [2, 'after', {
-      overrides: {
-        '&&': 'before',
-        '||': 'before',
-      }
-    }],
+    'operator-linebreak': [2, 'before'],
     'padded-blocks': [2, 'never'],
     'padding-line-between-statements': [
       2,
@@ -113,14 +112,19 @@ module.exports = {
         next: 'import',
       },
       {
+        blankLine: 'any',
+        prev: 'expression',
+        next: 'expression',
+      },
+      {
         blankLine: 'never',
         prev: ['singleline-const', 'singleline-let', 'singleline-var'],
-        next: ['singleline-const', 'singleline-let', 'singleline-var'],
+        next: ['const', 'let', 'var'],
       },
       {
         blankLine: 'always',
-        prev: ['const', 'let', 'var'],
-        next: ['multiline-const', 'multiline-expression', 'multiline-let', 'multiline-var'],
+        prev: ['multiline-const', 'multiline-expression', 'multiline-let', 'multiline-var'],
+        next: ['const', 'let', 'var'],
       },
     ],
     'prefer-exponentiation-operator': 0,
@@ -129,7 +133,6 @@ module.exports = {
       avoidEscape: true,
       allowTemplateLiterals: true
     }],
-    'semi': [2, 'always'],
     'sort-keys': [2, 'asc', {
       natural: true,
     }],

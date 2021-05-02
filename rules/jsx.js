@@ -4,6 +4,7 @@ module.exports = {
     'react/jsx-child-element-spacing': 0,
     'react/jsx-curly-brace-presence': [2, 'never'],
     'react/jsx-curly-newline': [2, {
+      multiline: 'require',
       singleline: 'forbid',
     }],
     'react/jsx-filename-extension': [2, {
@@ -30,10 +31,8 @@ module.exports = {
       warnOnSpreadAttributes: true,
     }],
     'react/jsx-one-expression-per-line': [2, {
-      allow: 'literal',
+      allow: 'none',
     }],
-    'react/jsx-props-no-multi-spaces': 0,
-    'react/jsx-props-no-spreading': 2,
     'react/jsx-sort-default-props': 0,
     'react/jsx-sort-props': [2, {
       shorthandLast: true,

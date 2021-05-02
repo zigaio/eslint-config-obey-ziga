@@ -4,10 +4,6 @@ module.exports = {
     '@typescript-eslint/array-type': [2, {
       default: 'array-simple'
     }],
-    '@typescript-eslint/consistent-type-assertions': [2, {
-      assertionStyle: 'angle-bracket',
-      objectLiteralTypeAssertions: 'never',
-    }],
     '@typescript-eslint/consistent-type-imports': [2, {
       prefer: 'no-type-imports',
     }],
