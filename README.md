@@ -10,7 +10,7 @@ This package provides heavily **opinionated** rules, in a shared config.
 ## Installation
 
 ```
-$ npm i -D eslint eslint-config-obey-ziga
+$ npm i -D eslint-config-obey-ziga
 ```
 
 ### With React
@@ -22,7 +22,7 @@ $ npm i -D eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 ### With TypeScript
 
 ```
-$ npm i -D typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+$ npm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
 ## Usage
