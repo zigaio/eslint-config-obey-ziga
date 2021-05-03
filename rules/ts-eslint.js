@@ -16,6 +16,7 @@ module.exports = {
       includeExports: true,
     }],
     '@typescript-eslint/no-extra-parens': [2, 'all', {
+      enforceForArrowConditionals: false,
       nestedBinaryExpressions: false,
       ignoreJSX: 'all',
     }],
