@@ -11,7 +11,13 @@ module.exports = {
       ignoreInlineComments: true,
       ignoreConsecutiveComments: true,
     }],
-    'comma-dangle': [2, 'always-multiline'],
+    'comma-dangle': [2, {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'never'
+    }],
     'consistent-this': 0,
     'func-name-matching': [2, {
       includeCommonJSModuleExports: true,

@@ -1,7 +1,13 @@
 module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
-    '@typescript-eslint/comma-dangle': [2, 'always-multiline'],
+    '@typescript-eslint/comma-dangle': [2, {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'never'
+    }],
     '@typescript-eslint/indent': [2, 2, {
       VariableDeclarator: 'first',
       SwitchCase: 1,
