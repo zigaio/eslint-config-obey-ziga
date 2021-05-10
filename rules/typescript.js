@@ -16,7 +16,7 @@ module.exports = {
       2,
       {
         selector: 'default',
-        format: ['strictCamelCase'],
+        format: ['strictCamelCase', 'UPPER_CASE'],
         leadingUnderscore: 'forbid',
         trailingUnderscore: 'forbid',
       },
