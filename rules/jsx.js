@@ -15,7 +15,6 @@ module.exports = {
       checkInlineFunction: true,
     }],
     'react/jsx-indent': [2, 2, {
-      checkAttributes: true,
       indentLogicalExpressions: true,
     }],
     'react/jsx-indent-props': [2, 'first'],
