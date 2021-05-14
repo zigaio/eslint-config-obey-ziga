@@ -22,11 +22,14 @@ module.exports = {
     }],
     '@typescript-eslint/no-magic-numbers': [2, {
       ignore: [
+        -1, // Common out-of-range/sub-zero comparor.
         0, // Common starting number.
         1, // Common Array.length comparor.
-        60, // Usually used for calculating time.
-        1000, // Usually used for converting time to ms.
-        1024 // Usually used for calculating byte sizes.
+        16, // Common base font-size.
+        60, // Commonly used for calculating time.
+        100, // Commonly used for percentage calculations.
+        1000, // Commonly used for ms conversion.
+        1024 // Commonly used for calculating byte sizes.
       ],
       ignoreArrayIndexes: true,
       detectObjects: true,
