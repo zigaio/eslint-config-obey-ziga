@@ -132,6 +132,11 @@ module.exports = {
         prev: ['multiline-const', 'multiline-expression', 'multiline-let', 'multiline-var'],
         next: ['const', 'let', 'var'],
       },
+      {
+        blankLine: 'never',
+        prev: ['*'],
+        next: ['break'],
+      },
     ],
     'prefer-exponentiation-operator': 0,
     'quote-props': [2, 'as-needed'],
